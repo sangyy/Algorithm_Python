@@ -10,11 +10,9 @@ print ("学校操场的400米跑道中套着300米小跑道，大跑道与小跑
 n = input("请输入第几次相遇：");
 n = int(n)
 #甲乙走过的总里程
+d = 0
 for i in range(1,n+1):
-    if i == 1:
-        d = 400
-        continue
-    if i%10 == 0:
+    if i%9 == 1:
         d = d + 400
     else:
         d = d + 700
