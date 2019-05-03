@@ -9,6 +9,7 @@ count = 0
 def hanoi(a,b,c,n):
     global count
     count += 1
+    #print(count,end='')
     if n == 1:
         print(a,'->',c)
     else:
