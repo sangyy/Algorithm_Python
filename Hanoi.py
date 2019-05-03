@@ -17,4 +17,4 @@ def hanoi(a,b,c,n):
         hanoi(b,a,c,n-1)
 num = int(input('请输入汉诺塔的圆盘数量:'))    
 hanoi('a','b','c',num)
-print("总共移动{}次".format(count))
+print("完成任务需要移动{}步".format(count))
