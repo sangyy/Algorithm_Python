@@ -20,5 +20,5 @@ def hanoi(a,b,c,n):
         #把B柱上n-1个圆盘借助A柱移动到C柱上
         hanoi(b,a,c,n-1)
 num = int(input('请输入汉诺塔的圆盘数量:'))    
-hanoi('a','b','c',num)
+hanoi('a柱','b柱','c柱',num)
 print("完成任务需要移动{}步。".format(count))
