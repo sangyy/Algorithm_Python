@@ -8,13 +8,15 @@ Created on Fri May  3 15:14:04 2019
 count = 0
 def hanoi(a,b,c,n):
     global count
-    count += 1
+    
     #print(count,end='')
     if n == 1:
-        print(a,'->',c)
+        count += 1
+        print('第',count,'次移动:',a,'->',c)
     else:
         hanoi(a,c,b,n-1)
-        print(a,'->',c)
+        count += 1
+        print('第',count,'次移动:',a,'->',c)
         hanoi(b,a,c,n-1)
 num = int(input('请输入汉诺塔的圆盘数量:'))    
 hanoi('a','b','c',num)
